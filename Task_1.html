@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // №1 Создайте всплывающее окно,
+    // которое спрашивает ввод любимого фильма и если ввод неверен,
+    // то программа отправляет запрос alert “Попробуйте ещё раз”.
+    // В функции должны быть минимум 2 условия.
+    // Не просто используйте prompt или alert или confirm,
+    // а создайте свою функцию, пример: "function Вашеимяфункциитут()"
+    var message = prompt("Введите фильм для поиска", "название фильма")
+    function find_film(message) {
+        if (message === "Джон Уик") {
+            alert("Фильм найден. Приятного просмотра.")
+        }
+        if (message === "Властелин колец") {
+            alert("Фильм найден. Приятного просмотра.")
+        } else {
+            alert("Попробуйте ещё раз")
+        }
+    }
+    find_film(message);
+</script>
+
+</body>
+</html>
